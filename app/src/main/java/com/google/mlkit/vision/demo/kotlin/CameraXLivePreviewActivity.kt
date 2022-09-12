@@ -54,18 +54,18 @@ import com.google.mlkit.vision.demo.CameraXViewModel
 import com.google.mlkit.vision.demo.GraphicOverlay
 import com.google.mlkit.vision.demo.R
 import com.google.mlkit.vision.demo.VisionImageProcessor
-import com.google.mlkit.vision.demo.kotlin.automl.AutoMLImageLabelerProcessor
-import com.google.mlkit.vision.demo.kotlin.barcodescanner.BarcodeScannerProcessor
-import com.google.mlkit.vision.demo.kotlin.facedetector.FaceDetectorProcessor
-import com.google.mlkit.vision.demo.kotlin.labeldetector.LabelDetectorProcessor
-import com.google.mlkit.vision.demo.kotlin.objectdetector.ObjectDetectorProcessor
+//import com.google.mlkit.vision.demo.kotlin.automl.AutoMLImageLabelerProcessor
+//import com.google.mlkit.vision.demo.kotlin.barcodescanner.BarcodeScannerProcessor
+//import com.google.mlkit.vision.demo.kotlin.facedetector.FaceDetectorProcessor
+//import com.google.mlkit.vision.demo.kotlin.labeldetector.LabelDetectorProcessor
+////import com.google.mlkit.vision.demo.kotlin.objectdetector.ObjectDetectorProcessor
 import com.google.mlkit.vision.demo.kotlin.posedetector.PoseDetectorProcessor
-import com.google.mlkit.vision.demo.kotlin.textdetector.TextRecognitionProcessor
+//import com.google.mlkit.vision.demo.kotlin.textdetector.TextRecognitionProcessor
 import com.google.mlkit.vision.demo.preference.PreferenceUtils
 import com.google.mlkit.vision.demo.preference.SettingsActivity
 import com.google.mlkit.vision.demo.preference.SettingsActivity.LaunchSource
-import com.google.mlkit.vision.label.custom.CustomImageLabelerOptions
-import com.google.mlkit.vision.label.defaults.ImageLabelerOptions
+//import com.google.mlkit.vision.label.custom.CustomImageLabelerOptions
+//import com.google.mlkit.vision.label.defaults.ImageLabelerOptions
 import java.util.ArrayList
 
 /** Live preview demo app for ML Kit APIs using CameraX.  */
@@ -83,7 +83,7 @@ class CameraXLivePreviewActivity :
   private var analysisUseCase: ImageAnalysis? = null
   private var imageProcessor: VisionImageProcessor? = null
   private var needUpdateGraphicOverlayImageSourceInfo = false
-  private var selectedModel = OBJECT_DETECTION
+  private var selectedModel = POSE_DETECTION
   private var lensFacing = CameraSelector.LENS_FACING_BACK
   private var cameraSelector: CameraSelector? = null
 
@@ -104,7 +104,7 @@ class CameraXLivePreviewActivity :
       selectedModel =
         savedInstanceState.getString(
           STATE_SELECTED_MODEL,
-          OBJECT_DETECTION
+          POSE_DETECTION
         )
       lensFacing =
         savedInstanceState.getInt(
@@ -300,78 +300,78 @@ class CameraXLivePreviewActivity :
     }
     imageProcessor = try {
       when (selectedModel) {
-        OBJECT_DETECTION -> {
-          Log.i(
-            TAG,
-            "Using Object Detector Processor"
-          )
-          val objectDetectorOptions =
-            PreferenceUtils.getObjectDetectorOptionsForLivePreview(this)
-          ObjectDetectorProcessor(
-            this, objectDetectorOptions
-          )
-        }
-        OBJECT_DETECTION_CUSTOM -> {
-          Log.i(
-            TAG,
-            "Using Custom Object Detector (Bird) Processor"
-          )
-          val localModel = LocalModel.Builder()
-            .setAssetFilePath("custom_models/bird_classifier.tflite")
-            .build()
-          val customObjectDetectorOptions =
-            PreferenceUtils.getCustomObjectDetectorOptionsForLivePreview(this, localModel)
-          ObjectDetectorProcessor(
-            this, customObjectDetectorOptions
-          )
-        }
-        TEXT_RECOGNITION -> {
-          Log.i(
-            TAG,
-            "Using on-device Text recognition Processor"
-          )
-          TextRecognitionProcessor(this)
-        }
-        FACE_DETECTION -> {
-          Log.i(
-            TAG,
-            "Using Face Detector Processor"
-          )
-          val faceDetectorOptions =
-            PreferenceUtils.getFaceDetectorOptionsForLivePreview(this)
-          FaceDetectorProcessor(this, faceDetectorOptions)
-        }
-        BARCODE_SCANNING -> {
-          Log.i(
-            TAG,
-            "Using Barcode Detector Processor"
-          )
-          BarcodeScannerProcessor(this)
-        }
-        IMAGE_LABELING -> {
-          Log.i(
-            TAG,
-            "Using Image Label Detector Processor"
-          )
-          LabelDetectorProcessor(
-            this, ImageLabelerOptions.DEFAULT_OPTIONS
-          )
-        }
-        IMAGE_LABELING_CUSTOM -> {
-          Log.i(
-            TAG,
-            "Using Custom Image Label (Bird) Detector Processor"
-          )
-          val localClassifier = LocalModel.Builder()
-            .setAssetFilePath("custom_models/bird_classifier.tflite")
-            .build()
-          val customImageLabelerOptions =
-            CustomImageLabelerOptions.Builder(localClassifier).build()
-          LabelDetectorProcessor(
-            this, customImageLabelerOptions
-          )
-        }
-        AUTOML_LABELING -> AutoMLImageLabelerProcessor(this)
+//        OBJECT_DETECTION -> {
+//          Log.i(
+//            TAG,
+//            "Using Object Detector Processor"
+//          )
+//          val objectDetectorOptions =
+//            PreferenceUtils.getObjectDetectorOptionsForLivePreview(this)
+//          ObjectDetectorProcessor(
+//            this, objectDetectorOptions
+//          )
+//        }
+//        OBJECT_DETECTION_CUSTOM -> {
+//          Log.i(
+//            TAG,
+//            "Using Custom Object Detector (Bird) Processor"
+//          )
+//          val localModel = LocalModel.Builder()
+//            .setAssetFilePath("custom_models/bird_classifier.tflite")
+//            .build()
+//          val customObjectDetectorOptions =
+//            PreferenceUtils.getCustomObjectDetectorOptionsForLivePreview(this, localModel)
+//          ObjectDetectorProcessor(
+//            this, customObjectDetectorOptions
+//          )
+//        }
+//        TEXT_RECOGNITION -> {
+//          Log.i(
+//            TAG,
+//            "Using on-device Text recognition Processor"
+//          )
+//          TextRecognitionProcessor(this)
+//        }
+//        FACE_DETECTION -> {
+//          Log.i(
+//            TAG,
+//            "Using Face Detector Processor"
+//          )
+//          val faceDetectorOptions =
+//            PreferenceUtils.getFaceDetectorOptionsForLivePreview(this)
+//          FaceDetectorProcessor(this, faceDetectorOptions)
+//        }
+//        BARCODE_SCANNING -> {
+//          Log.i(
+//            TAG,
+//            "Using Barcode Detector Processor"
+//          )
+//          BarcodeScannerProcessor(this)
+//        }
+//        IMAGE_LABELING -> {
+//          Log.i(
+//            TAG,
+//            "Using Image Label Detector Processor"
+//          )
+//          LabelDetectorProcessor(
+//            this, ImageLabelerOptions.DEFAULT_OPTIONS
+//          )
+//        }
+//        IMAGE_LABELING_CUSTOM -> {
+//          Log.i(
+//            TAG,
+//            "Using Custom Image Label (Bird) Detector Processor"
+//          )
+//          val localClassifier = LocalModel.Builder()
+//            .setAssetFilePath("custom_models/bird_classifier.tflite")
+//            .build()
+//          val customImageLabelerOptions =
+//            CustomImageLabelerOptions.Builder(localClassifier).build()
+//          LabelDetectorProcessor(
+//            this, customImageLabelerOptions
+//          )
+//        }
+//        AUTOML_LABELING -> AutoMLImageLabelerProcessor(this)
         POSE_DETECTION -> {
           val poseDetectorOptions =
             PreferenceUtils.getPoseDetectorOptionsForLivePreview(this)
@@ -500,14 +500,14 @@ class CameraXLivePreviewActivity :
   companion object {
     private const val TAG = "CameraXLivePreview"
     private const val PERMISSION_REQUESTS = 1
-    private const val OBJECT_DETECTION = "Object Detection"
-    private const val OBJECT_DETECTION_CUSTOM = "Custom Object Detection (Bird)"
-    private const val FACE_DETECTION = "Face Detection"
-    private const val TEXT_RECOGNITION = "Text Recognition"
-    private const val BARCODE_SCANNING = "Barcode Scanning"
-    private const val IMAGE_LABELING = "Image Labeling"
-    private const val IMAGE_LABELING_CUSTOM = "Custom Image Labeling (Bird)"
-    private const val AUTOML_LABELING = "AutoML Image Labeling"
+//    private const val OBJECT_DETECTION = "Object Detection"
+//    private const val OBJECT_DETECTION_CUSTOM = "Custom Object Detection (Bird)"
+//    private const val FACE_DETECTION = "Face Detection"
+//    private const val TEXT_RECOGNITION = "Text Recognition"
+//    private const val BARCODE_SCANNING = "Barcode Scanning"
+//    private const val IMAGE_LABELING = "Image Labeling"
+//    private const val IMAGE_LABELING_CUSTOM = "Custom Image Labeling (Bird)"
+//    private const val AUTOML_LABELING = "AutoML Image Labeling"
     private const val POSE_DETECTION = "Pose Detection"
     private const val STATE_SELECTED_MODEL = "selected_model"
     private const val STATE_LENS_FACING = "lens_facing"
