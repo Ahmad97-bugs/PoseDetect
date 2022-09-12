@@ -1,0 +1,272 @@
+1<?xml version="1.0" encoding="utf-8"?>
+2<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+3    package="com.google.mlkit.vision.demo"
+4    android:installLocation="auto"
+5    android:versionCode="11"
+6    android:versionName="1.11" >
+7    <!--
+8 CameraX libraries require minSdkVersion 21, while this quickstart app
+9    supports low to 16. Needs to use overrideLibrary to make the merger tool
+10    ignore this conflict and import the libraries while keeping the app's lower
+11    minSdkVersion value. In code, will check SDK version, before calling CameraX
+12    APIs.
+13    -->
+14    <uses-sdk
+14-->C:\PoseDetect\app\src\main\AndroidManifest.xml:12:5-14:63
+15        android:minSdkVersion="16"
+15-->C:\PoseDetect\app\src\main\AndroidManifest.xml:12:5-14:63
+16        android:targetSdkVersion="29" />
+16-->C:\PoseDetect\app\src\main\AndroidManifest.xml:12:5-14:63
+17
+18    <uses-feature android:name="android.hardware.camera" />
+18-->C:\PoseDetect\app\src\main\AndroidManifest.xml:16:5-60
+18-->C:\PoseDetect\app\src\main\AndroidManifest.xml:16:19-57
+19
+20    <uses-permission android:name="android.permission.INTERNET" />
+20-->C:\PoseDetect\app\src\main\AndroidManifest.xml:18:5-67
+20-->C:\PoseDetect\app\src\main\AndroidManifest.xml:18:22-64
+21    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+21-->C:\PoseDetect\app\src\main\AndroidManifest.xml:19:5-81
+21-->C:\PoseDetect\app\src\main\AndroidManifest.xml:19:22-78
+22    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
+22-->C:\PoseDetect\app\src\main\AndroidManifest.xml:20:5-80
+22-->C:\PoseDetect\app\src\main\AndroidManifest.xml:20:22-77
+23    <uses-permission android:name="android.permission.CAMERA" />
+23-->C:\PoseDetect\app\src\main\AndroidManifest.xml:21:5-65
+23-->C:\PoseDetect\app\src\main\AndroidManifest.xml:21:22-62
+24
+25    <application
+25-->C:\PoseDetect\app\src\main\AndroidManifest.xml:23:5-93:19
+26        android:name="androidx.multidex.MultiDexApplication"
+26-->C:\PoseDetect\app\src\main\AndroidManifest.xml:24:9-61
+27        android:appComponentFactory="androidx.core.app.CoreComponentFactory"
+27-->[androidx.core:core:1.3.0] C:\Users\ahmad.khateeb\.gradle\caches\transforms-3\978fe1b26d7f9297a78e214658968186\transformed\core-1.3.0\AndroidManifest.xml:24:18-86
+28        android:debuggable="true"
+29        android:icon="@drawable/logo_mlkit"
+29-->C:\PoseDetect\app\src\main\AndroidManifest.xml:25:9-44
+30        android:label="@string/app_name"
+30-->C:\PoseDetect\app\src\main\AndroidManifest.xml:26:9-41
+31        android:testOnly="true"
+32        android:theme="@style/Theme.AppCompat" >
+32-->C:\PoseDetect\app\src\main\AndroidManifest.xml:27:9-47
+33        <meta-data
+33-->C:\PoseDetect\app\src\main\AndroidManifest.xml:29:9-31:69
+34            android:name="com.google.android.gms.version"
+34-->C:\PoseDetect\app\src\main\AndroidManifest.xml:30:13-58
+35            android:value="@integer/google_play_services_version" />
+35-->C:\PoseDetect\app\src\main\AndroidManifest.xml:31:13-66
+36
+37        <!--
+38          Optional: Add it to automatically download ML model to device after
+39          your app is installed.
+40        -->
+41        <meta-data
+41-->C:\PoseDetect\app\src\main\AndroidManifest.xml:35:9-37:52
+42            android:name="com.google.mlkit.vision.DEPENDENCIES"
+42-->C:\PoseDetect\app\src\main\AndroidManifest.xml:36:13-64
+43            android:value="barcode,face,ocr,ica" />
+43-->C:\PoseDetect\app\src\main\AndroidManifest.xml:37:13-49
+44
+45        <activity
+45-->C:\PoseDetect\app\src\main\AndroidManifest.xml:39:9-48:20
+46            android:name="com.google.mlkit.vision.demo.kotlin.ChooserActivity"
+46-->C:\PoseDetect\app\src\main\AndroidManifest.xml:40:13-51
+47            android:exported="true"
+47-->C:\PoseDetect\app\src\main\AndroidManifest.xml:41:13-36
+48            android:theme="@style/AppTheme" >
+48-->C:\PoseDetect\app\src\main\AndroidManifest.xml:42:13-44
+49
+50            <!-- move this to activity down to become defaultcd $PERSONETICS_HOME/logs/ -->
+51            <intent-filter>
+51-->C:\PoseDetect\app\src\main\AndroidManifest.xml:44:13-47:29
+52                <action android:name="android.intent.action.MAIN" />
+52-->C:\PoseDetect\app\src\main\AndroidManifest.xml:45:17-69
+52-->C:\PoseDetect\app\src\main\AndroidManifest.xml:45:25-66
+53
+54                <category android:name="android.intent.category.LAUNCHER" />
+54-->C:\PoseDetect\app\src\main\AndroidManifest.xml:46:17-77
+54-->C:\PoseDetect\app\src\main\AndroidManifest.xml:46:27-74
+55            </intent-filter>
+56        </activity>
+57        <activity
+57-->C:\PoseDetect\app\src\main\AndroidManifest.xml:50:9-52:48
+58            android:name="com.google.mlkit.vision.demo.java.ChooserActivity"
+58-->C:\PoseDetect\app\src\main\AndroidManifest.xml:51:13-49
+59            android:exported="true" />
+59-->C:\PoseDetect\app\src\main\AndroidManifest.xml:52:13-36
+60        <activity
+60-->C:\PoseDetect\app\src\main\AndroidManifest.xml:54:9-57:56
+61            android:name="com.google.mlkit.vision.demo.java.LivePreviewActivity"
+61-->C:\PoseDetect\app\src\main\AndroidManifest.xml:55:13-53
+62            android:exported="true"
+62-->C:\PoseDetect\app\src\main\AndroidManifest.xml:56:13-36
+63            android:theme="@style/AppTheme" />
+63-->C:\PoseDetect\app\src\main\AndroidManifest.xml:57:13-44
+64        <activity
+64-->C:\PoseDetect\app\src\main\AndroidManifest.xml:59:9-62:56
+65            android:name="com.google.mlkit.vision.demo.java.CameraXLivePreviewActivity"
+65-->C:\PoseDetect\app\src\main\AndroidManifest.xml:60:13-60
+66            android:exported="true"
+66-->C:\PoseDetect\app\src\main\AndroidManifest.xml:61:13-36
+67            android:theme="@style/AppTheme" />
+67-->C:\PoseDetect\app\src\main\AndroidManifest.xml:62:13-44
+68        <activity
+68-->C:\PoseDetect\app\src\main\AndroidManifest.xml:64:9-67:56
+69            android:name="com.google.mlkit.vision.demo.java.StillImageActivity"
+69-->C:\PoseDetect\app\src\main\AndroidManifest.xml:65:13-52
+70            android:exported="true"
+70-->C:\PoseDetect\app\src\main\AndroidManifest.xml:66:13-36
+71            android:theme="@style/AppTheme" />
+71-->C:\PoseDetect\app\src\main\AndroidManifest.xml:67:13-44
+72
+73        <!-- <activity -->
+74        <!-- android:name=".kotlin.ChooserActivity" -->
+75        <!-- android:exported="true"> -->
+76        <!-- </activity> -->
+77
+78        <activity
+78-->C:\PoseDetect\app\src\main\AndroidManifest.xml:74:9-77:56
+79            android:name="com.google.mlkit.vision.demo.kotlin.LivePreviewActivity"
+79-->C:\PoseDetect\app\src\main\AndroidManifest.xml:75:13-55
+80            android:exported="true"
+80-->C:\PoseDetect\app\src\main\AndroidManifest.xml:76:13-36
+81            android:theme="@style/AppTheme" />
+81-->C:\PoseDetect\app\src\main\AndroidManifest.xml:77:13-44
+82        <activity
+82-->C:\PoseDetect\app\src\main\AndroidManifest.xml:79:9-82:56
+83            android:name="com.google.mlkit.vision.demo.kotlin.CameraXLivePreviewActivity"
+83-->C:\PoseDetect\app\src\main\AndroidManifest.xml:80:13-62
+84            android:exported="true"
+84-->C:\PoseDetect\app\src\main\AndroidManifest.xml:81:13-36
+85            android:theme="@style/AppTheme" />
+85-->C:\PoseDetect\app\src\main\AndroidManifest.xml:82:13-44
+86        <activity
+86-->C:\PoseDetect\app\src\main\AndroidManifest.xml:84:9-87:56
+87            android:name="com.google.mlkit.vision.demo.kotlin.StillImageActivity"
+87-->C:\PoseDetect\app\src\main\AndroidManifest.xml:85:13-54
+88            android:exported="true"
+88-->C:\PoseDetect\app\src\main\AndroidManifest.xml:86:13-36
+89            android:theme="@style/AppTheme" />
+89-->C:\PoseDetect\app\src\main\AndroidManifest.xml:87:13-44
+90        <activity
+90-->C:\PoseDetect\app\src\main\AndroidManifest.xml:89:9-91:40
+91            android:name="com.google.mlkit.vision.demo.preference.SettingsActivity"
+91-->C:\PoseDetect\app\src\main\AndroidManifest.xml:90:13-56
+92            android:exported="false" />
+92-->C:\PoseDetect\app\src\main\AndroidManifest.xml:91:13-37
+93
+94        <service
+94-->[com.google.mlkit:object-detection:16.2.1] C:\Users\ahmad.khateeb\.gradle\caches\transforms-3\b884d5a48436c0d1aa0e0d4fc79aadbc\transformed\jetified-object-detection-16.2.1\AndroidManifest.xml:8:9-14:19
+95            android:name="com.google.mlkit.common.internal.MlKitComponentDiscoveryService"
+95-->[com.google.mlkit:object-detection:16.2.1] C:\Users\ahmad.khateeb\.gradle\caches\transforms-3\b884d5a48436c0d1aa0e0d4fc79aadbc\transformed\jetified-object-detection-16.2.1\AndroidManifest.xml:9:13-91
+96            android:directBootAware="true"
+96-->[com.google.mlkit:common:17.0.0] C:\Users\ahmad.khateeb\.gradle\caches\transforms-3\704b99d776505cca89acb490852ea43f\transformed\jetified-common-17.0.0\AndroidManifest.xml:17:13-43
+97            android:exported="false" >
+97-->[com.google.mlkit:object-detection:16.2.1] C:\Users\ahmad.khateeb\.gradle\caches\transforms-3\b884d5a48436c0d1aa0e0d4fc79aadbc\transformed\jetified-object-detection-16.2.1\AndroidManifest.xml:10:13-37
+98            <meta-data
+98-->[com.google.mlkit:object-detection:16.2.1] C:\Users\ahmad.khateeb\.gradle\caches\transforms-3\b884d5a48436c0d1aa0e0d4fc79aadbc\transformed\jetified-object-detection-16.2.1\AndroidManifest.xml:11:13-13:85
+99                android:name="com.google.firebase.components:com.google.mlkit.vision.objects.defaults.internal.DefaultObjectsRegistrar"
+99-->[com.google.mlkit:object-detection:16.2.1] C:\Users\ahmad.khateeb\.gradle\caches\transforms-3\b884d5a48436c0d1aa0e0d4fc79aadbc\transformed\jetified-object-detection-16.2.1\AndroidManifest.xml:12:17-136
+100                android:value="com.google.firebase.components.ComponentRegistrar" />
+100-->[com.google.mlkit:object-detection:16.2.1] C:\Users\ahmad.khateeb\.gradle\caches\transforms-3\b884d5a48436c0d1aa0e0d4fc79aadbc\transformed\jetified-object-detection-16.2.1\AndroidManifest.xml:13:17-82
+101            <meta-data
+101-->[com.google.mlkit:object-detection-custom:16.2.1] C:\Users\ahmad.khateeb\.gradle\caches\transforms-3\23df17763e872f780783bfa5585a4937\transformed\jetified-object-detection-custom-16.2.1\AndroidManifest.xml:11:13-13:85
+102                android:name="com.google.firebase.components:com.google.mlkit.vision.objects.custom.internal.CustomObjectsRegistrar"
+102-->[com.google.mlkit:object-detection-custom:16.2.1] C:\Users\ahmad.khateeb\.gradle\caches\transforms-3\23df17763e872f780783bfa5585a4937\transformed\jetified-object-detection-custom-16.2.1\AndroidManifest.xml:12:17-133
+103                android:value="com.google.firebase.components.ComponentRegistrar" />
+103-->[com.google.mlkit:object-detection-custom:16.2.1] C:\Users\ahmad.khateeb\.gradle\caches\transforms-3\23df17763e872f780783bfa5585a4937\transformed\jetified-object-detection-custom-16.2.1\AndroidManifest.xml:13:17-82
+104            <meta-data
+104-->[com.google.android.gms:play-services-mlkit-text-recognition:16.1.1] C:\Users\ahmad.khateeb\.gradle\caches\transforms-3\f24189d4b0387bc9aa88cf8094d56629\transformed\jetified-play-services-mlkit-text-recognition-16.1.1\AndroidManifest.xml:12:13-14:85
+105                android:name="com.google.firebase.components:com.google.mlkit.vision.text.internal.TextRegistrar"
+105-->[com.google.android.gms:play-services-mlkit-text-recognition:16.1.1] C:\Users\ahmad.khateeb\.gradle\caches\transforms-3\f24189d4b0387bc9aa88cf8094d56629\transformed\jetified-play-services-mlkit-text-recognition-16.1.1\AndroidManifest.xml:13:17-114
+106                android:value="com.google.firebase.components.ComponentRegistrar" />
+106-->[com.google.android.gms:play-services-mlkit-text-recognition:16.1.1] C:\Users\ahmad.khateeb\.gradle\caches\transforms-3\f24189d4b0387bc9aa88cf8094d56629\transformed\jetified-play-services-mlkit-text-recognition-16.1.1\AndroidManifest.xml:14:17-82
+107            <meta-data
+107-->[com.google.mlkit:image-labeling-automl:16.2.1] C:\Users\ahmad.khateeb\.gradle\caches\transforms-3\a3e6450392500e6bfe65e9387a4a1e04\transformed\jetified-image-labeling-automl-16.2.1\AndroidManifest.xml:11:13-13:85
+108                android:name="com.google.firebase.components:com.google.mlkit.vision.label.automl.internal.AutoMLLabelRegistrar"
+108-->[com.google.mlkit:image-labeling-automl:16.2.1] C:\Users\ahmad.khateeb\.gradle\caches\transforms-3\a3e6450392500e6bfe65e9387a4a1e04\transformed\jetified-image-labeling-automl-16.2.1\AndroidManifest.xml:12:17-129
+109                android:value="com.google.firebase.components.ComponentRegistrar" />
+109-->[com.google.mlkit:image-labeling-automl:16.2.1] C:\Users\ahmad.khateeb\.gradle\caches\transforms-3\a3e6450392500e6bfe65e9387a4a1e04\transformed\jetified-image-labeling-automl-16.2.1\AndroidManifest.xml:13:17-82
+110            <meta-data
+110-->[com.google.mlkit:image-labeling:17.0.0] C:\Users\ahmad.khateeb\.gradle\caches\transforms-3\cefe4693ce0d7abc20da062e2e961acc\transformed\jetified-image-labeling-17.0.0\AndroidManifest.xml:11:13-13:85
+111                android:name="com.google.firebase.components:com.google.mlkit.vision.label.defaults.internal.BundledLabelRegistrar"
+111-->[com.google.mlkit:image-labeling:17.0.0] C:\Users\ahmad.khateeb\.gradle\caches\transforms-3\cefe4693ce0d7abc20da062e2e961acc\transformed\jetified-image-labeling-17.0.0\AndroidManifest.xml:12:17-132
+112                android:value="com.google.firebase.components.ComponentRegistrar" />
+112-->[com.google.mlkit:image-labeling:17.0.0] C:\Users\ahmad.khateeb\.gradle\caches\transforms-3\cefe4693ce0d7abc20da062e2e961acc\transformed\jetified-image-labeling-17.0.0\AndroidManifest.xml:13:17-82
+113            <meta-data
+113-->[com.google.mlkit:image-labeling-custom:16.2.1] C:\Users\ahmad.khateeb\.gradle\caches\transforms-3\2657494a6fe584613e831af6ad532638\transformed\jetified-image-labeling-custom-16.2.1\AndroidManifest.xml:11:13-13:85
+114                android:name="com.google.firebase.components:com.google.mlkit.vision.label.custom.internal.CustomLabelRegistrar"
+114-->[com.google.mlkit:image-labeling-custom:16.2.1] C:\Users\ahmad.khateeb\.gradle\caches\transforms-3\2657494a6fe584613e831af6ad532638\transformed\jetified-image-labeling-custom-16.2.1\AndroidManifest.xml:12:17-129
+115                android:value="com.google.firebase.components.ComponentRegistrar" />
+115-->[com.google.mlkit:image-labeling-custom:16.2.1] C:\Users\ahmad.khateeb\.gradle\caches\transforms-3\2657494a6fe584613e831af6ad532638\transformed\jetified-image-labeling-custom-16.2.1\AndroidManifest.xml:13:17-82
+116            <meta-data
+116-->[com.google.mlkit:pose-detection:16.0.0] C:\Users\ahmad.khateeb\.gradle\caches\transforms-3\ab01347cefb86ea2ef33ca48202199d5\transformed\jetified-pose-detection-16.0.0\AndroidManifest.xml:12:13-14:85
+117                android:name="com.google.firebase.components:com.google.mlkit.vision.pose.internal.PoseRegistrar"
+117-->[com.google.mlkit:pose-detection:16.0.0] C:\Users\ahmad.khateeb\.gradle\caches\transforms-3\ab01347cefb86ea2ef33ca48202199d5\transformed\jetified-pose-detection-16.0.0\AndroidManifest.xml:13:17-114
+118                android:value="com.google.firebase.components.ComponentRegistrar" />
+118-->[com.google.mlkit:pose-detection:16.0.0] C:\Users\ahmad.khateeb\.gradle\caches\transforms-3\ab01347cefb86ea2ef33ca48202199d5\transformed\jetified-pose-detection-16.0.0\AndroidManifest.xml:14:17-82
+119            <meta-data
+119-->[com.google.android.gms:play-services-mlkit-barcode-scanning:16.1.2] C:\Users\ahmad.khateeb\.gradle\caches\transforms-3\f77d2c442a8c15480e470fabea631d9c\transformed\jetified-play-services-mlkit-barcode-scanning-16.1.2\AndroidManifest.xml:12:13-14:85
+120                android:name="com.google.firebase.components:com.google.mlkit.vision.barcode.internal.BarcodeRegistrar"
+120-->[com.google.android.gms:play-services-mlkit-barcode-scanning:16.1.2] C:\Users\ahmad.khateeb\.gradle\caches\transforms-3\f77d2c442a8c15480e470fabea631d9c\transformed\jetified-play-services-mlkit-barcode-scanning-16.1.2\AndroidManifest.xml:13:17-120
+121                android:value="com.google.firebase.components.ComponentRegistrar" />
+121-->[com.google.android.gms:play-services-mlkit-barcode-scanning:16.1.2] C:\Users\ahmad.khateeb\.gradle\caches\transforms-3\f77d2c442a8c15480e470fabea631d9c\transformed\jetified-play-services-mlkit-barcode-scanning-16.1.2\AndroidManifest.xml:14:17-82
+122            <meta-data
+122-->[com.google.android.gms:play-services-mlkit-face-detection:16.1.1] C:\Users\ahmad.khateeb\.gradle\caches\transforms-3\7f54daf59a9dcb127460be870c84508e\transformed\jetified-play-services-mlkit-face-detection-16.1.1\AndroidManifest.xml:12:13-14:85
+123                android:name="com.google.firebase.components:com.google.mlkit.vision.face.internal.FaceRegistrar"
+123-->[com.google.android.gms:play-services-mlkit-face-detection:16.1.1] C:\Users\ahmad.khateeb\.gradle\caches\transforms-3\7f54daf59a9dcb127460be870c84508e\transformed\jetified-play-services-mlkit-face-detection-16.1.1\AndroidManifest.xml:13:17-114
+124                android:value="com.google.firebase.components.ComponentRegistrar" />
+124-->[com.google.android.gms:play-services-mlkit-face-detection:16.1.1] C:\Users\ahmad.khateeb\.gradle\caches\transforms-3\7f54daf59a9dcb127460be870c84508e\transformed\jetified-play-services-mlkit-face-detection-16.1.1\AndroidManifest.xml:14:17-82
+125            <meta-data
+125-->[com.google.mlkit:vision-internal-vkp:17.0.1] C:\Users\ahmad.khateeb\.gradle\caches\transforms-3\64495c840f7f42bbfe6ee741b062d6eb\transformed\jetified-vision-internal-vkp-17.0.1\AndroidManifest.xml:11:13-13:85
+126                android:name="com.google.firebase.components:com.google.mlkit.vision.vkp.VkpRegistrar"
+126-->[com.google.mlkit:vision-internal-vkp:17.0.1] C:\Users\ahmad.khateeb\.gradle\caches\transforms-3\64495c840f7f42bbfe6ee741b062d6eb\transformed\jetified-vision-internal-vkp-17.0.1\AndroidManifest.xml:12:17-103
+127                android:value="com.google.firebase.components.ComponentRegistrar" />
+127-->[com.google.mlkit:vision-internal-vkp:17.0.1] C:\Users\ahmad.khateeb\.gradle\caches\transforms-3\64495c840f7f42bbfe6ee741b062d6eb\transformed\jetified-vision-internal-vkp-17.0.1\AndroidManifest.xml:13:17-82
+128            <meta-data
+128-->[com.google.mlkit:vision-common:16.1.0] C:\Users\ahmad.khateeb\.gradle\caches\transforms-3\b20ae8203d74f505b52e34373afa72a4\transformed\jetified-vision-common-16.1.0\AndroidManifest.xml:12:13-14:85
+129                android:name="com.google.firebase.components:com.google.mlkit.vision.common.internal.VisionCommonRegistrar"
+129-->[com.google.mlkit:vision-common:16.1.0] C:\Users\ahmad.khateeb\.gradle\caches\transforms-3\b20ae8203d74f505b52e34373afa72a4\transformed\jetified-vision-common-16.1.0\AndroidManifest.xml:13:17-124
+130                android:value="com.google.firebase.components.ComponentRegistrar" />
+130-->[com.google.mlkit:vision-common:16.1.0] C:\Users\ahmad.khateeb\.gradle\caches\transforms-3\b20ae8203d74f505b52e34373afa72a4\transformed\jetified-vision-common-16.1.0\AndroidManifest.xml:14:17-82
+131            <meta-data
+131-->[com.google.mlkit:common:17.0.0] C:\Users\ahmad.khateeb\.gradle\caches\transforms-3\704b99d776505cca89acb490852ea43f\transformed\jetified-common-17.0.0\AndroidManifest.xml:20:13-22:85
+132                android:name="com.google.firebase.components:com.google.mlkit.common.internal.CommonComponentRegistrar"
+132-->[com.google.mlkit:common:17.0.0] C:\Users\ahmad.khateeb\.gradle\caches\transforms-3\704b99d776505cca89acb490852ea43f\transformed\jetified-common-17.0.0\AndroidManifest.xml:21:17-120
+133                android:value="com.google.firebase.components.ComponentRegistrar" />
+133-->[com.google.mlkit:common:17.0.0] C:\Users\ahmad.khateeb\.gradle\caches\transforms-3\704b99d776505cca89acb490852ea43f\transformed\jetified-common-17.0.0\AndroidManifest.xml:22:17-82
+134        </service>
+135
+136        <provider
+136-->[com.google.mlkit:common:17.0.0] C:\Users\ahmad.khateeb\.gradle\caches\transforms-3\704b99d776505cca89acb490852ea43f\transformed\jetified-common-17.0.0\AndroidManifest.xml:9:9-13:38
+137            android:name="com.google.mlkit.common.internal.MlKitInitProvider"
+137-->[com.google.mlkit:common:17.0.0] C:\Users\ahmad.khateeb\.gradle\caches\transforms-3\704b99d776505cca89acb490852ea43f\transformed\jetified-common-17.0.0\AndroidManifest.xml:10:13-78
+138            android:authorities="com.google.mlkit.vision.demo.mlkitinitprovider"
+138-->[com.google.mlkit:common:17.0.0] C:\Users\ahmad.khateeb\.gradle\caches\transforms-3\704b99d776505cca89acb490852ea43f\transformed\jetified-common-17.0.0\AndroidManifest.xml:11:13-69
+139            android:exported="false"
+139-->[com.google.mlkit:common:17.0.0] C:\Users\ahmad.khateeb\.gradle\caches\transforms-3\704b99d776505cca89acb490852ea43f\transformed\jetified-common-17.0.0\AndroidManifest.xml:12:13-37
+140            android:initOrder="99" />
+140-->[com.google.mlkit:common:17.0.0] C:\Users\ahmad.khateeb\.gradle\caches\transforms-3\704b99d776505cca89acb490852ea43f\transformed\jetified-common-17.0.0\AndroidManifest.xml:13:13-35
+141
+142        <activity
+142-->[com.google.android.gms:play-services-base:17.0.0] C:\Users\ahmad.khateeb\.gradle\caches\transforms-3\d5d8230f1bc636c3e4b81fc0b210ae83\transformed\jetified-play-services-base-17.0.0\AndroidManifest.xml:23:9-26:75
+143            android:name="com.google.android.gms.common.api.GoogleApiActivity"
+143-->[com.google.android.gms:play-services-base:17.0.0] C:\Users\ahmad.khateeb\.gradle\caches\transforms-3\d5d8230f1bc636c3e4b81fc0b210ae83\transformed\jetified-play-services-base-17.0.0\AndroidManifest.xml:24:13-79
+144            android:exported="false"
+144-->[com.google.android.gms:play-services-base:17.0.0] C:\Users\ahmad.khateeb\.gradle\caches\transforms-3\d5d8230f1bc636c3e4b81fc0b210ae83\transformed\jetified-play-services-base-17.0.0\AndroidManifest.xml:25:13-37
+145            android:theme="@android:style/Theme.Translucent.NoTitleBar" />
+145-->[com.google.android.gms:play-services-base:17.0.0] C:\Users\ahmad.khateeb\.gradle\caches\transforms-3\d5d8230f1bc636c3e4b81fc0b210ae83\transformed\jetified-play-services-base-17.0.0\AndroidManifest.xml:26:13-72
+146
+147        <provider
+147-->[androidx.lifecycle:lifecycle-process:2.1.0] C:\Users\ahmad.khateeb\.gradle\caches\transforms-3\21ccb6d3001d4e2f9d762a3a61295a35\transformed\jetified-lifecycle-process-2.1.0\AndroidManifest.xml:23:9-27:43
+148            android:name="androidx.lifecycle.ProcessLifecycleOwnerInitializer"
+148-->[androidx.lifecycle:lifecycle-process:2.1.0] C:\Users\ahmad.khateeb\.gradle\caches\transforms-3\21ccb6d3001d4e2f9d762a3a61295a35\transformed\jetified-lifecycle-process-2.1.0\AndroidManifest.xml:24:13-79
+149            android:authorities="com.google.mlkit.vision.demo.lifecycle-process"
+149-->[androidx.lifecycle:lifecycle-process:2.1.0] C:\Users\ahmad.khateeb\.gradle\caches\transforms-3\21ccb6d3001d4e2f9d762a3a61295a35\transformed\jetified-lifecycle-process-2.1.0\AndroidManifest.xml:25:13-69
+150            android:exported="false"
+150-->[androidx.lifecycle:lifecycle-process:2.1.0] C:\Users\ahmad.khateeb\.gradle\caches\transforms-3\21ccb6d3001d4e2f9d762a3a61295a35\transformed\jetified-lifecycle-process-2.1.0\AndroidManifest.xml:26:13-37
+151            android:multiprocess="true" />
+151-->[androidx.lifecycle:lifecycle-process:2.1.0] C:\Users\ahmad.khateeb\.gradle\caches\transforms-3\21ccb6d3001d4e2f9d762a3a61295a35\transformed\jetified-lifecycle-process-2.1.0\AndroidManifest.xml:27:13-40
+152    </application>
+153
+154</manifest>

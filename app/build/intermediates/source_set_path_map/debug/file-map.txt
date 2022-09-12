@@ -1,0 +1,16 @@
+com.google.mlkit.vision.demo.app-resValues-0 C:\PoseDetect\app\build\generated\res\resValues\debug
+com.google.mlkit.vision.demo.app-rs-1 C:\PoseDetect\app\build\generated\res\rs\debug
+com.google.mlkit.vision.demo.app-mergeDebugResources-2 C:\PoseDetect\app\build\intermediates\incremental\debug\mergeDebugResources\merged.dir
+com.google.mlkit.vision.demo.app-mergeDebugResources-3 C:\PoseDetect\app\build\intermediates\incremental\debug\mergeDebugResources\stripped.dir
+com.google.mlkit.vision.demo.app-merged_res-4 C:\PoseDetect\app\build\intermediates\merged_res\debug
+com.google.mlkit.vision.demo.app-debug-5 C:\PoseDetect\app\src\debug\res
+com.google.mlkit.vision.demo.app-main-6 C:\PoseDetect\app\src\main\res
+com.google.mlkit.vision.demo.app-jetified-camera-camera2-1.0.0-beta07-7 C:\Users\ahmad.khateeb\.gradle\caches\transforms-3\21942f4b37abe74ed34de2f7b342917b\transformed\jetified-camera-camera2-1.0.0-beta07\res
+com.google.mlkit.vision.demo.app-jetified-play-services-basement-17.0.0-8 C:\Users\ahmad.khateeb\.gradle\caches\transforms-3\43fddd6092222902965701736148e2dd\transformed\jetified-play-services-basement-17.0.0\res
+com.google.mlkit.vision.demo.app-constraintlayout-1.1.3-9 C:\Users\ahmad.khateeb\.gradle\caches\transforms-3\4f9726d0f80d040b1bf20777a13352b3\transformed\constraintlayout-1.1.3\res
+com.google.mlkit.vision.demo.app-jetified-appcompat-resources-1.2.0-10 C:\Users\ahmad.khateeb\.gradle\caches\transforms-3\54390a15c078f7755f66ffebcf691b71\transformed\jetified-appcompat-resources-1.2.0\res
+com.google.mlkit.vision.demo.app-appcompat-1.2.0-11 C:\Users\ahmad.khateeb\.gradle\caches\transforms-3\85eb3d3ab9d69d95b8d21dbacf45d548\transformed\appcompat-1.2.0\res
+com.google.mlkit.vision.demo.app-core-1.3.0-12 C:\Users\ahmad.khateeb\.gradle\caches\transforms-3\978fe1b26d7f9297a78e214658968186\transformed\core-1.3.0\res
+com.google.mlkit.vision.demo.app-jetified-camera-view-1.0.0-alpha14-13 C:\Users\ahmad.khateeb\.gradle\caches\transforms-3\aa9362c858e4f301c128c68c140f840a\transformed\jetified-camera-view-1.0.0-alpha14\res
+com.google.mlkit.vision.demo.app-jetified-play-services-base-17.0.0-14 C:\Users\ahmad.khateeb\.gradle\caches\transforms-3\d5d8230f1bc636c3e4b81fc0b210ae83\transformed\jetified-play-services-base-17.0.0\res
+com.google.mlkit.vision.demo.app-jetified-camera-core-1.0.0-beta07-15 C:\Users\ahmad.khateeb\.gradle\caches\transforms-3\e04f37bb49558da0d0a09a250e4f46b6\transformed\jetified-camera-core-1.0.0-beta07\res
