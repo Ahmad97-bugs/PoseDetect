@@ -1,9 +1,9 @@
 -- Merging decision tree log ---
 manifest
-ADDED from C:\PoseDetect\app\src\main\AndroidManifest.xml:2:1-95:12
-INJECTED from C:\PoseDetect\app\src\main\AndroidManifest.xml:2:1-95:12
-INJECTED from C:\PoseDetect\app\src\main\AndroidManifest.xml:2:1-95:12
-INJECTED from C:\PoseDetect\app\src\main\AndroidManifest.xml:2:1-95:12
+ADDED from C:\PoseDetect\app\src\main\AndroidManifest.xml:2:1-81:12
+INJECTED from C:\PoseDetect\app\src\main\AndroidManifest.xml:2:1-81:12
+INJECTED from C:\PoseDetect\app\src\main\AndroidManifest.xml:2:1-81:12
+INJECTED from C:\PoseDetect\app\src\main\AndroidManifest.xml:2:1-81:12
 MERGED from [androidx.multidex:multidex:2.0.1] C:\Users\ahmad.khateeb\.gradle\caches\transforms-3\0a1ba8365231779c067072cbf7b2a881\transformed\multidex-2.0.1\AndroidManifest.xml:17:1-22:12
 MERGED from [com.google.mlkit:barcode-scanning:16.0.3] C:\Users\ahmad.khateeb\.gradle\caches\transforms-3\998512d600d05b37cc9b5b2e28e88a81\transformed\jetified-barcode-scanning-16.0.3\AndroidManifest.xml:2:1-7:12
 MERGED from [com.google.mlkit:object-detection:16.2.1] C:\Users\ahmad.khateeb\.gradle\caches\transforms-3\b884d5a48436c0d1aa0e0d4fc79aadbc\transformed\jetified-object-detection-16.2.1\AndroidManifest.xml:2:1-17:12
@@ -65,22 +65,22 @@ MERGED from [androidx.constraintlayout:constraintlayout:1.1.3] C:\Users\ahmad.kh
 MERGED from [org.tensorflow:tensorflow-lite:2.1.0] C:\Users\ahmad.khateeb\.gradle\caches\transforms-3\2f9e1bf072c6b6b2c5931e682ef6755e\transformed\jetified-tensorflow-lite-2.1.0\AndroidManifest.xml:2:1-10:12
 MERGED from [com.google.android.datatransport:transport-api:2.1.0] C:\Users\ahmad.khateeb\.gradle\caches\transforms-3\e7c62cc31905ffefd79019e9ffc2bfb8\transformed\jetified-transport-api-2.1.0\AndroidManifest.xml:15:1-22:12
 MERGED from [androidx.annotation:annotation-experimental:1.0.0-rc01] C:\Users\ahmad.khateeb\.gradle\caches\transforms-3\f075f8957ad16da33e9e6e642983b857\transformed\jetified-annotation-experimental-1.0.0-rc01\AndroidManifest.xml:17:1-24:12
-INJECTED from C:\PoseDetect\app\src\main\AndroidManifest.xml:2:1-95:12
-INJECTED from C:\PoseDetect\app\src\main\AndroidManifest.xml:2:1-95:12
-INJECTED from C:\PoseDetect\app\src\main\AndroidManifest.xml:2:1-95:12
+INJECTED from C:\PoseDetect\app\src\main\AndroidManifest.xml:2:1-81:12
+INJECTED from C:\PoseDetect\app\src\main\AndroidManifest.xml:2:1-81:12
+INJECTED from C:\PoseDetect\app\src\main\AndroidManifest.xml:2:1-81:12
 	package
 		ADDED from C:\PoseDetect\app\src\main\AndroidManifest.xml:4:5-43
 		INJECTED from C:\PoseDetect\app\src\main\AndroidManifest.xml
 		INJECTED from C:\PoseDetect\app\src\main\AndroidManifest.xml
 	android:versionName
 		INJECTED from C:\PoseDetect\app\src\main\AndroidManifest.xml
-		ADDED from C:\PoseDetect\app\src\main\AndroidManifest.xml:2:1-95:12
+		ADDED from C:\PoseDetect\app\src\main\AndroidManifest.xml:2:1-81:12
 		INJECTED from C:\PoseDetect\app\src\main\AndroidManifest.xml
 	xmlns:tools
 		ADDED from C:\PoseDetect\app\src\main\AndroidManifest.xml:3:5-51
 	android:versionCode
 		INJECTED from C:\PoseDetect\app\src\main\AndroidManifest.xml
-		ADDED from C:\PoseDetect\app\src\main\AndroidManifest.xml:2:1-95:12
+		ADDED from C:\PoseDetect\app\src\main\AndroidManifest.xml:2:1-81:12
 		INJECTED from C:\PoseDetect\app\src\main\AndroidManifest.xml
 	xmlns:android
 		ADDED from C:\PoseDetect\app\src\main\AndroidManifest.xml:2:11-69
@@ -246,7 +246,7 @@ ADDED from C:\PoseDetect\app\src\main\AndroidManifest.xml:21:5-65
 	android:name
 		ADDED from C:\PoseDetect\app\src\main\AndroidManifest.xml:21:22-62
 application
-ADDED from C:\PoseDetect\app\src\main\AndroidManifest.xml:23:5-93:19
+ADDED from C:\PoseDetect\app\src\main\AndroidManifest.xml:23:5-79:19
 MERGED from [com.google.mlkit:object-detection:16.2.1] C:\Users\ahmad.khateeb\.gradle\caches\transforms-3\b884d5a48436c0d1aa0e0d4fc79aadbc\transformed\jetified-object-detection-16.2.1\AndroidManifest.xml:7:5-15:19
 MERGED from [com.google.mlkit:object-detection:16.2.1] C:\Users\ahmad.khateeb\.gradle\caches\transforms-3\b884d5a48436c0d1aa0e0d4fc79aadbc\transformed\jetified-object-detection-16.2.1\AndroidManifest.xml:7:5-15:19
 MERGED from [com.google.mlkit:object-detection-custom:16.2.1] C:\Users\ahmad.khateeb\.gradle\caches\transforms-3\23df17763e872f780783bfa5585a4937\transformed\jetified-object-detection-custom-16.2.1\AndroidManifest.xml:7:5-15:19
@@ -324,7 +324,7 @@ ADDED from C:\PoseDetect\app\src\main\AndroidManifest.xml:35:9-37:52
 	android:name
 		ADDED from C:\PoseDetect\app\src\main\AndroidManifest.xml:36:13-64
 activity#com.google.mlkit.vision.demo.kotlin.ChooserActivity
-ADDED from C:\PoseDetect\app\src\main\AndroidManifest.xml:39:9-48:20
+ADDED from C:\PoseDetect\app\src\main\AndroidManifest.xml:39:9-47:20
 	android:exported
 		ADDED from C:\PoseDetect\app\src\main\AndroidManifest.xml:41:13-36
 	android:theme
@@ -332,75 +332,59 @@ ADDED from C:\PoseDetect\app\src\main\AndroidManifest.xml:39:9-48:20
 	android:name
 		ADDED from C:\PoseDetect\app\src\main\AndroidManifest.xml:40:13-51
 intent-filter#action:name:android.intent.action.MAIN+category:name:android.intent.category.LAUNCHER
-ADDED from C:\PoseDetect\app\src\main\AndroidManifest.xml:44:13-47:29
+ADDED from C:\PoseDetect\app\src\main\AndroidManifest.xml:43:13-46:29
 action#android.intent.action.MAIN
-ADDED from C:\PoseDetect\app\src\main\AndroidManifest.xml:45:17-69
+ADDED from C:\PoseDetect\app\src\main\AndroidManifest.xml:44:17-69
 	android:name
-		ADDED from C:\PoseDetect\app\src\main\AndroidManifest.xml:45:25-66
+		ADDED from C:\PoseDetect\app\src\main\AndroidManifest.xml:44:25-66
 category#android.intent.category.LAUNCHER
-ADDED from C:\PoseDetect\app\src\main\AndroidManifest.xml:46:17-77
+ADDED from C:\PoseDetect\app\src\main\AndroidManifest.xml:45:17-77
 	android:name
-		ADDED from C:\PoseDetect\app\src\main\AndroidManifest.xml:46:27-74
+		ADDED from C:\PoseDetect\app\src\main\AndroidManifest.xml:45:27-74
 activity#com.google.mlkit.vision.demo.java.ChooserActivity
-ADDED from C:\PoseDetect\app\src\main\AndroidManifest.xml:50:9-52:48
+ADDED from C:\PoseDetect\app\src\main\AndroidManifest.xml:49:9-51:48
 	android:exported
-		ADDED from C:\PoseDetect\app\src\main\AndroidManifest.xml:52:13-36
+		ADDED from C:\PoseDetect\app\src\main\AndroidManifest.xml:51:13-36
 	android:name
-		ADDED from C:\PoseDetect\app\src\main\AndroidManifest.xml:51:13-49
+		ADDED from C:\PoseDetect\app\src\main\AndroidManifest.xml:50:13-49
 activity#com.google.mlkit.vision.demo.java.LivePreviewActivity
-ADDED from C:\PoseDetect\app\src\main\AndroidManifest.xml:54:9-57:56
+ADDED from C:\PoseDetect\app\src\main\AndroidManifest.xml:53:9-56:56
 	android:exported
-		ADDED from C:\PoseDetect\app\src\main\AndroidManifest.xml:56:13-36
+		ADDED from C:\PoseDetect\app\src\main\AndroidManifest.xml:55:13-36
 	android:theme
-		ADDED from C:\PoseDetect\app\src\main\AndroidManifest.xml:57:13-44
+		ADDED from C:\PoseDetect\app\src\main\AndroidManifest.xml:56:13-44
 	android:name
-		ADDED from C:\PoseDetect\app\src\main\AndroidManifest.xml:55:13-53
+		ADDED from C:\PoseDetect\app\src\main\AndroidManifest.xml:54:13-53
 activity#com.google.mlkit.vision.demo.java.CameraXLivePreviewActivity
-ADDED from C:\PoseDetect\app\src\main\AndroidManifest.xml:59:9-62:56
+ADDED from C:\PoseDetect\app\src\main\AndroidManifest.xml:58:9-61:56
 	android:exported
-		ADDED from C:\PoseDetect\app\src\main\AndroidManifest.xml:61:13-36
+		ADDED from C:\PoseDetect\app\src\main\AndroidManifest.xml:60:13-36
 	android:theme
-		ADDED from C:\PoseDetect\app\src\main\AndroidManifest.xml:62:13-44
+		ADDED from C:\PoseDetect\app\src\main\AndroidManifest.xml:61:13-44
 	android:name
-		ADDED from C:\PoseDetect\app\src\main\AndroidManifest.xml:60:13-60
+		ADDED from C:\PoseDetect\app\src\main\AndroidManifest.xml:59:13-60
 activity#com.google.mlkit.vision.demo.java.StillImageActivity
-ADDED from C:\PoseDetect\app\src\main\AndroidManifest.xml:64:9-67:56
+ADDED from C:\PoseDetect\app\src\main\AndroidManifest.xml:63:9-66:56
 	android:exported
-		ADDED from C:\PoseDetect\app\src\main\AndroidManifest.xml:66:13-36
+		ADDED from C:\PoseDetect\app\src\main\AndroidManifest.xml:65:13-36
 	android:theme
-		ADDED from C:\PoseDetect\app\src\main\AndroidManifest.xml:67:13-44
+		ADDED from C:\PoseDetect\app\src\main\AndroidManifest.xml:66:13-44
 	android:name
-		ADDED from C:\PoseDetect\app\src\main\AndroidManifest.xml:65:13-52
-activity#com.google.mlkit.vision.demo.kotlin.LivePreviewActivity
-ADDED from C:\PoseDetect\app\src\main\AndroidManifest.xml:74:9-77:56
-	android:exported
-		ADDED from C:\PoseDetect\app\src\main\AndroidManifest.xml:76:13-36
-	android:theme
-		ADDED from C:\PoseDetect\app\src\main\AndroidManifest.xml:77:13-44
-	android:name
-		ADDED from C:\PoseDetect\app\src\main\AndroidManifest.xml:75:13-55
+		ADDED from C:\PoseDetect\app\src\main\AndroidManifest.xml:64:13-52
 activity#com.google.mlkit.vision.demo.kotlin.CameraXLivePreviewActivity
-ADDED from C:\PoseDetect\app\src\main\AndroidManifest.xml:79:9-82:56
+ADDED from C:\PoseDetect\app\src\main\AndroidManifest.xml:69:9-72:56
 	android:exported
-		ADDED from C:\PoseDetect\app\src\main\AndroidManifest.xml:81:13-36
+		ADDED from C:\PoseDetect\app\src\main\AndroidManifest.xml:71:13-36
 	android:theme
-		ADDED from C:\PoseDetect\app\src\main\AndroidManifest.xml:82:13-44
+		ADDED from C:\PoseDetect\app\src\main\AndroidManifest.xml:72:13-44
 	android:name
-		ADDED from C:\PoseDetect\app\src\main\AndroidManifest.xml:80:13-62
-activity#com.google.mlkit.vision.demo.kotlin.StillImageActivity
-ADDED from C:\PoseDetect\app\src\main\AndroidManifest.xml:84:9-87:56
-	android:exported
-		ADDED from C:\PoseDetect\app\src\main\AndroidManifest.xml:86:13-36
-	android:theme
-		ADDED from C:\PoseDetect\app\src\main\AndroidManifest.xml:87:13-44
-	android:name
-		ADDED from C:\PoseDetect\app\src\main\AndroidManifest.xml:85:13-54
+		ADDED from C:\PoseDetect\app\src\main\AndroidManifest.xml:70:13-62
 activity#com.google.mlkit.vision.demo.preference.SettingsActivity
-ADDED from C:\PoseDetect\app\src\main\AndroidManifest.xml:89:9-91:40
+ADDED from C:\PoseDetect\app\src\main\AndroidManifest.xml:75:9-77:40
 	android:exported
-		ADDED from C:\PoseDetect\app\src\main\AndroidManifest.xml:91:13-37
+		ADDED from C:\PoseDetect\app\src\main\AndroidManifest.xml:77:13-37
 	android:name
-		ADDED from C:\PoseDetect\app\src\main\AndroidManifest.xml:90:13-56
+		ADDED from C:\PoseDetect\app\src\main\AndroidManifest.xml:76:13-56
 service#com.google.mlkit.common.internal.MlKitComponentDiscoveryService
 ADDED from [com.google.mlkit:object-detection:16.2.1] C:\Users\ahmad.khateeb\.gradle\caches\transforms-3\b884d5a48436c0d1aa0e0d4fc79aadbc\transformed\jetified-object-detection-16.2.1\AndroidManifest.xml:8:9-14:19
 MERGED from [com.google.mlkit:object-detection-custom:16.2.1] C:\Users\ahmad.khateeb\.gradle\caches\transforms-3\23df17763e872f780783bfa5585a4937\transformed\jetified-object-detection-custom-16.2.1\AndroidManifest.xml:8:9-14:19

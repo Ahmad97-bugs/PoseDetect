@@ -20,7 +20,7 @@ import android.content.Intent
 import android.os.Bundle
 import androidx.appcompat.app.AppCompatActivity
 import android.widget.TextView
-import com.google.mlkit.vision.demo.java.ChooserActivity
+//import com.google.mlkit.vision.demo.java.ChooserActivity
 
 class EntryChoiceActivity : AppCompatActivity() {
 

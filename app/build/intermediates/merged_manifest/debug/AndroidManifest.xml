@@ -46,8 +46,6 @@
             android:name="com.google.mlkit.vision.demo.kotlin.ChooserActivity"
             android:exported="true"
             android:theme="@style/AppTheme" >
-
-            <!-- move this to activity down to become defaultcd $PERSONETICS_HOME/logs/ -->
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 
@@ -69,22 +67,8 @@
             android:name="com.google.mlkit.vision.demo.java.StillImageActivity"
             android:exported="true"
             android:theme="@style/AppTheme" />
-
-        <!-- <activity -->
-        <!-- android:name=".kotlin.ChooserActivity" -->
-        <!-- android:exported="true"> -->
-        <!-- </activity> -->
-
-        <activity
-            android:name="com.google.mlkit.vision.demo.kotlin.LivePreviewActivity"
-            android:exported="true"
-            android:theme="@style/AppTheme" />
         <activity
             android:name="com.google.mlkit.vision.demo.kotlin.CameraXLivePreviewActivity"
-            android:exported="true"
-            android:theme="@style/AppTheme" />
-        <activity
-            android:name="com.google.mlkit.vision.demo.kotlin.StillImageActivity"
             android:exported="true"
             android:theme="@style/AppTheme" />
         <activity
