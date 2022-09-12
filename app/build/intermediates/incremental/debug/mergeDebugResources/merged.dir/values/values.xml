@@ -494,7 +494,7 @@
     <string name="common_signin_button_text">Sign in</string>
     <string name="common_signin_button_text_long">Sign in with Google</string>
     <string name="desc_camera_source_activity">Vision detectors demo with live camera preview</string>
-    <string name="desc_camerax_live_preview_activity">Vision detectors demo with live preview using CameraX. Note that CameraX is only supported on API 21+</string>
+    <string name="desc_camerax_live_preview_activity">Start recording a jump - squat then jump</string>
     <string name="desc_still_image_activity">Vision detectors demo with a still image</string>
     <string name="download_error">Download error</string>
     <string name="java_entry_title">Run the ML Kit quickstart written in Java</string>

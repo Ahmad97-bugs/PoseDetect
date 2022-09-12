@@ -11,7 +11,7 @@
     <string name="toggle_turn_off">Back</string>
     <string name="desc_camera_source_activity">Vision detectors demo with live camera preview</string>
     <string name="desc_still_image_activity">Vision detectors demo with a still image</string>
-    <string name="desc_camerax_live_preview_activity">Vision detectors demo with live preview using CameraX. Note that CameraX is only supported on API 21+</string>
+    <string name="desc_camerax_live_preview_activity">Start recording a jump - squat then jump</string>
     <string name="download_error">Download error</string>
     <string name="start_over">Start over</string>
     <string name="menu_item_settings">Settings</string>

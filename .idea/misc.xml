@@ -3,6 +3,7 @@
   <component name="DesignSurface">
     <option name="filePathToZoomLevelMap">
       <map>
+        <entry key="..\:/PoseDetect/app/src/main/res/layout/activity_chooser.xml" value="0.5294384057971014" />
         <entry key="..\:/PoseDetect/app/src/main/res/layout/activity_vision_camerax_live_preview.xml" value="0.31354166666666666" />
         <entry key="..\:/PoseDetect/app/src/main/res/menu/camera_button_menu.xml" value="0.31354166666666666" />
         <entry key="..\:/PoseDetect/app/src/main/res/menu/live_preview_menu.xml" value="0.31354166666666666" />
